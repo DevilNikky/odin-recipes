@@ -1,0 +1,147 @@
+/* recipe-styles.css */
+
+/* RESET ET STYLES DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* STYLES GÉNÉRAUX ET TYPOGRAPHIE */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  /* Les titres sont des éléments block par défaut */
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  color: #e74c3c;
+}
+
+p {
+  /* Les paragraphes sont des éléments block par défaut */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+a {
+  /* Les liens sont des éléments inline par défaut */
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 15px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #1a252f;
+  text-decoration: none;
+}
+
+img {
+  /* Les images sont des éléments inline par défaut, mais nous les rendons block */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul, ol {
+  /* Les listes sont des éléments block */
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  /* Les éléments de liste sont des éléments block */
+  margin-bottom: 0.5rem;
+}
+
+/* Suppression du soulignement dans les titres */
+u {
+  text-decoration: none;
+}
+
+/* SECTIONS DE LA RECETTE */
+.recipe-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.ingredients-section, .steps-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ingredients-section h3, .steps-section h3 {
+  margin-top: 0;
+}
+
+/* ÉTIQUETTES ET BADGES */
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e74c3c;
+  border-radius: 30px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* BOUTON DE RETOUR */
+.home-link {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+} 

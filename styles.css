@@ -1,0 +1,249 @@
+/* styles.css */
+
+/* RESET ET STYLES DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Change le modèle de boîte pour faciliter le dimensionnement */
+}
+
+/* STYLES GÉNÉRAUX ET TYPOGRAPHIE */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  /* Le body est un élément block par défaut qui occupe toute la largeur disponible */
+}
+
+h1, h2, h3 {
+  /* Les titres sont des éléments block par défaut */
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+p {
+  /* Les paragraphes sont des éléments block par défaut */
+  margin-bottom: 1rem;
+}
+
+a {
+  /* Les liens sont des éléments inline par défaut */
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+img {
+  /* Les images sont des éléments inline par défaut, mais nous les rendons block */
+  display: block; /* Changement en block pour contrôler les marges */
+  max-width: 100%;
+  height: auto;
+}
+
+/* LAYOUT PRINCIPAL */
+.page-header {
+  /* Les headers sont des éléments block */
+  background-color: #2c3e50;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.site-description {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+}
+
+.content-container {
+  /* Conteneur principal - élément block avec flex pour le layout */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.recipes-section {
+  /* Section principale - élément block */
+  flex: 3;
+  min-width: 300px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.recipe-cards {
+  /* Conteneur des cartes - élément block avec grid layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  /* Les cartes sont des éléments block */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Cache les débordements */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Contrôle comment l'image remplit son conteneur */
+}
+
+.recipe-card h3 {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.3rem;
+}
+
+.recipe-description {
+  padding: 0 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.recipe-link {
+  /* Le lien est inline par défaut, mais on le transforme en inline-block */
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.recipe-link:hover {
+  background-color: #c0392b;
+  text-decoration: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+  /* Barre latérale - élément block */
+  flex: 1;
+  min-width: 250px;
+}
+
+.sidebar-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.category-list {
+  /* Les listes sont des éléments block */
+  list-style: none;
+}
+
+.category-list li {
+  /* Les éléments de liste sont des éléments block */
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.email-input {
+  /* Les inputs sont des éléments inline-block par défaut */
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  /* Les boutons sont des éléments inline-block par défaut */
+  padding: 0.7rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #1a252f;
+}
+
+/* FOOTER */
+.page-footer {
+  /* Le footer est un élément block */
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.highlight {
+  /* Les spans sont des éléments inline par défaut */
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* MEDIA QUERIES POUR LA RESPONSIVITÉ */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+  
+  .recipe-cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .sidebar {
+    order: -1; /* Place la sidebar au-dessus du contenu principal sur mobile */
+  }
+}
+  

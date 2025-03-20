@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes - Des recettes délicieuses</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header class="page-header">
+      <h1 class="main-title">Odin Recipes</h1>
+      <p class="site-description">Une collection de recettes délicieuses et faciles à préparer</p>
+    </header>
+
+    <main class="content-container">
+      <section class="recipes-section">
+        <h2 class="section-title">Nos recettes populaires</h2>
+        
+        <p class="intro-text">Découvrez notre sélection de recettes italiennes classiques, préparées avec des ingrédients frais et beaucoup d'amour.</p>
+        
+        <div class="recipe-cards">       
+          <div class="recipe-card">
+            <img src="./recipes/images/lasagne.jpg" alt="Image de lasagne" class="recipe-image">
+            <h3>Lasagne Classique</h3>
+            <p class="recipe-description">Une recette traditionnelle de lasagne avec sauce bolognaise.</p>
+            <a href="recipes/lasagne.html" class="recipe-link">Voir la recette</a>
+          </div>
+          
+          <div class="recipe-card">
+            <img src="./recipes/images/spaghetti.webp" alt="Image de spaghetti" class="recipe-image">
+            <h3>Spaghetti Bolognaise</h3>
+            <p class="recipe-description">Des spaghetti al dente avec une délicieuse sauce à la viande.</p>
+            <a href="recipes/sphaghetti.html" class="recipe-link">Voir la recette</a>
+          </div>    
+          
+          <div class="recipe-card">
+            <img src="./recipes/images/pizza.webp" alt="Image de pizza" class="recipe-image">
+            <h3>Pizza Margherita</h3>
+            <p class="recipe-description">La pizza italienne dans sa version la plus pure et savoureuse.</p>
+            <a href="recipes/pizza.html" class="recipe-link">Voir la recette</a>
+          </div>
+          
+          <div class="recipe-card">
+            <img src="https://via.placeholder.com/150" alt="Image de nouvelle recette" class="recipe-image">
+            <h3>Tiramisu</h3>
+            <p class="recipe-description">Le dessert italien par excellence, crémeux et parfumé au café.</p>
+            <a href="recipes/nouvelle-recette.html" class="recipe-link">Voir la recette</a>
+          </div>
+        </div>
+      </section>
+      
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3>Catégories</h3>
+          <ul class="category-list">
+            <li><a href="#">Plats principaux</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Entrées</a></li>
+            <li><a href="#">Boissons</a></li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-section">
+          <h3>Abonnez-vous</h3>
+          <p>Recevez nos nouvelles recettes par email</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Votre email" class="email-input">
+            <button type="submit" class="subscribe-button">S'abonner</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+    
+    <footer class="page-footer">
+      <p>© 2023 Odin Recipes - Projet d'apprentissage - <span class="highlight">Tous droits réservés</span></p>
+    </footer>
+  </body>
+</html>
